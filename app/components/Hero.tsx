@@ -11,7 +11,7 @@ export function Hero() {
         <div className="md:w-1/2 space-y-6 text-center md:text-left">
           <div className="space-y-2">
             <h2 className="text-lg font-medium text-blue-600 tracking-wide animate-fade-in">
-              Hello, I'm
+              Hello, I&apos;m
             </h2>
             <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Fening Okai
