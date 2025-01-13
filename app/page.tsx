@@ -8,7 +8,7 @@ import { Contact } from './components/Contact'
 
 export default function Home() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 px-4 sm:px-6 md:px-8">
       <Hero />
       <About />
       <Skills />

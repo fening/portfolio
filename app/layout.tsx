@@ -18,11 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <div className="flex min-h-screen">
-          <div className="fixed h-screen">
+        <div className="min-h-screen flex">
+          <div className="hidden lg:block fixed h-screen">
             <Sidebar />
           </div>
-          <main className="flex-1 ml-64 overflow-y-auto p-8">
+          <main className="flex-1 lg:ml-64 overflow-y-auto p-8">
             {children}
           </main>
         </div>
