@@ -9,7 +9,7 @@ export function About() {
             </h2>
             <div className="w-20 h-1 bg-blue-600"></div>
             <p className="text-lg text-gray-600 leading-relaxed">
-              I am an experienced IT professional with over 10 years of experience in driving success through advanced analytics, technology assurance, and continuous improvement. My expertise spans across security frameworks, data analytics, machine learning, cloud computing, and systems engineering.
+              I am an experienced IT professional with multiple years of experience in driving success through advanced analytics, technology assurance, and continuous improvement. My expertise spans across security frameworks, data analytics, machine learning, cloud computing, and systems engineering.
             </p>
           </div>
           <div className="relative">
