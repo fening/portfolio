@@ -19,14 +19,14 @@ export function Skills() {
         title: "Cloud Computing",
         description: "Strong capabilities in cloud computing platforms like VMWare, AWS, Azure, and GCP, along with extensive knowledge in systems engineering.",
         tags: ["AWS", "Azure", "GCP", "VMWare"]
-      }
-    ],
-    professional: [
+      },
       {
         title: "Applications and Networking",
         description: "Proficient in using Power platforms (PowerApps), Microsoft applications, and experienced in networking, including Routing, Switching, and Firewall management.",
         tags: ["PowerApps", "Microsoft 365", "Networking", "Firewall"]
-      },
+      }
+    ],
+    professional: [
       {
         title: "Problem Solving & Analysis",
         description: "Expertise in leading and managing projects and teams, combined with strong problem-solving and analytical skills.",
