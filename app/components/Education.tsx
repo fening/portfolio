@@ -16,7 +16,16 @@ export function Education() {
     {
       degree: "BSc in Information Technology",
       school: "Ghana Communication Technology University, Accra",
-      period: "Sep 2013 - Jul 2017"
+      period: "Sep 2013 - Jul 2017",
+      courses: [
+        "Computer Networks",
+        "Database Management Systems",
+        "Information Security",
+        "Web Development",
+        "Software Engineering",
+        "Operating Systems",
+        "Business Intelligence"
+      ]
     }
   ]
 
