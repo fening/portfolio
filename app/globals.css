@@ -107,3 +107,17 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Gist Container Styles */
+.gist-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.gist .gist-file {
+  margin-bottom: 0 !important;
+}
+
+.gist-meta {
+  display: none !important;
+}

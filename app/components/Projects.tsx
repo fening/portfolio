@@ -1,7 +1,7 @@
-// ...existing code...
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Script } from './Script'
 
 type Project = {
   title: string;
@@ -83,6 +83,12 @@ export function Projects() {
             >
               Cybersecurity Projects
             </TabsTrigger>
+            <TabsTrigger 
+              className="px-6 py-2 rounded-md transition-all data-[state=active]:bg-white data-[state=active]:shadow-sm" 
+              value="codeSnippets"
+            >
+              Code Snippets
+            </TabsTrigger>
           </TabsList>
           
           {(["dataScience", "cybersecurity"] as CategoryKey[]).map((category) => (
@@ -119,6 +125,20 @@ export function Projects() {
               </div>
             </TabsContent>
           ))}
+
+          <TabsContent value="codeSnippets">
+            <div className="bg-white p-6 rounded-xl shadow-md">
+              <iframe
+                src="data:text/html;charset=utf-8,
+                  <head><base target='_blank' /></head>
+                  <body>
+                    <script src='https://gist.github.com/fening/7eedb5dcc1c3f20445b916d14282cf58.js'></script>
+                  </body>"
+                style={{width: '100%', height: '500px'}}
+                className="border-none"
+              />
+            </div>
+          </TabsContent>
         </Tabs>
       </div>
     </section>

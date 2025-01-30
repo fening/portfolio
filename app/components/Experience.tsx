@@ -85,7 +85,7 @@ export function Experience() {
               </div>
 
                 {/* Content card */}
-                <div className="bg-white p-6 md:p-12 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 relative z-10 mt-16">
+                <div className="bg-white top-12 p-6 md:p-12 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 relative z-10 mt-16">
               {/* Mobile date display */}
               <div className="text-blue-600 font-medium text-sm mb-3 md:hidden">
                 {exp.period}
