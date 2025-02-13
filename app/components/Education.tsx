@@ -39,11 +39,11 @@ export function Education() {
           <div className="w-20 h-1 bg-blue-600"></div>
         </div>
 
-        <div className="space-y-8 relative">
+        <div className="space-y-12 relative"> {/* Increased from space-y-8 */}
           {education.map((edu, index) => (
             <div 
               key={index} 
-              className="relative pl-16 md:pl-32"
+              className="relative pl-16 md:pl-32 pb-12 last:pb-0" /* Added padding */
             >
               {/* Timeline line */}
               <div className="absolute left-[30px] md:left-[40px] top-0 bottom-0 w-0.5 bg-blue-100"></div>
@@ -59,7 +59,7 @@ export function Education() {
               </div>
 
               {/* Content card */}
-              <div className="bg-white top-12 p-6 md:p-12 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 relative z-10 mt-16">
+              <div className="bg-white p-6 md:p-12 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 relative z-10 mt-24"> {/* Increased mt-16 to mt-24 */}
                 {/* Mobile date display */}
                 <div className="text-blue-600 font-medium text-sm mb-3 md:hidden">
                   {edu.period}

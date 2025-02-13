@@ -1,7 +1,8 @@
+'use client'
+
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Script } from './Script'
 
 type Project = {
   title: string;
@@ -16,49 +17,49 @@ type ProjectCategories = {
 
 type CategoryKey = keyof ProjectCategories;
 
-export function Projects() {
-  const projects: ProjectCategories = {
-    dataScience: [
-      {
-        title: "Shepherd Hospital Project",
-        description: "Developed causal inference models to assess stroke treatment efficacy for personalized healthcare plans",
-        tags: ["Causal Inference", "Healthcare Analytics", "Python"]
-      },
-      {
-        title: "Large Language Model Deployment",
-        description: "Deployed local LLMs using Retrieval-Augmented Generation (RAG) with langchain for advanced tabular data queries",
-        tags: ["LLM", "RAG", "NLP"]
-      },
-      {
-        title: "Big Data Streaming Analytics",
-        description: "Implemented PySpark streaming for real-time business success prediction across states",
-        tags: ["PySpark", "Streaming Analytics", "Big Data"]
-      },
-      {
-        title: "Hospital Management System",
-        description: "Created MongoDB-based system with ML for patient-doctor matching",
-        tags: ["MongoDB", "Machine Learning", "Healthcare"]
-      }
-    ],
-    cybersecurity: [
-      {
-        title: "Enterprise Security Assessment",
-        description: "Led comprehensive IT audits improving control effectiveness by 25% and reducing non-compliance by 30%",
-        tags: ["Security Audit", "Compliance", "Risk Assessment"]
-      },
-      {
-        title: "Fintech Security Framework",
-        description: "Implemented security controls in fintech operations, resulting in 20% improvement in audit outcomes",
-        tags: ["Fintech", "Security Controls", "Compliance"]
-      },
-      {
-        title: "Mobile Banking Security",
-        description: "Led USSD mobile banking implementation with PCI DSS compliance",
-        tags: ["PCI DSS", "Mobile Security", "Banking"]
-      }
-    ]
-  };
+const projects: ProjectCategories = {
+  dataScience: [
+    {
+      title: "Shepherd Hospital Project",
+      description: "Developed causal inference models to assess stroke treatment efficacy for personalized healthcare plans",
+      tags: ["Causal Inference", "Healthcare Analytics", "Python"]
+    },
+    {
+      title: "Large Language Model Deployment",
+      description: "Deployed local LLMs using Retrieval-Augmented Generation (RAG) with langchain for advanced tabular data queries",
+      tags: ["LLM", "RAG", "NLP"]
+    },
+    {
+      title: "Big Data Streaming Analytics",
+      description: "Implemented PySpark streaming for real-time business success prediction across states",
+      tags: ["PySpark", "Streaming Analytics", "Big Data"]
+    },
+    {
+      title: "Hospital Management System",
+      description: "Created MongoDB-based system with ML for patient-doctor matching",
+      tags: ["MongoDB", "Machine Learning", "Healthcare"]
+    }
+  ],
+  cybersecurity: [
+    {
+      title: "Enterprise Security Assessment",
+      description: "Led comprehensive IT audits improving control effectiveness by 25% and reducing non-compliance by 30%",
+      tags: ["Security Audit", "Compliance", "Risk Assessment"]
+    },
+    {
+      title: "Fintech Security Framework",
+      description: "Implemented security controls in fintech operations, resulting in 20% improvement in audit outcomes",
+      tags: ["Fintech", "Security Controls", "Compliance"]
+    },
+    {
+      title: "Mobile Banking Security",
+      description: "Led USSD mobile banking implementation with PCI DSS compliance",
+      tags: ["PCI DSS", "Mobile Security", "Banking"]
+    }
+  ]
+};
 
+export function Projects() {
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -134,8 +135,8 @@ export function Projects() {
                   <body>
                     <script src='https://gist.github.com/fening/7eedb5dcc1c3f20445b916d14282cf58.js'></script>
                   </body>"
-                style={{width: '100%', height: '500px'}}
-                className="border-none"
+                style={{width: '100%', height: '800px'}}
+                className="border-none w-full"
               />
             </div>
           </TabsContent>
