@@ -3,6 +3,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Gallery } from "./Gallery"
 
 type Project = {
   title: string;
@@ -60,6 +61,29 @@ const projects: ProjectCategories = {
 };
 
 export function Projects() {
+  const dashboardImages = [
+    {
+      src: "/images/dashboards/dashboard-1.jpg",
+      alt: "Attendance Analysis Dashboard Overview",
+      title: "Dashboard Overview"
+    },
+    {
+      src: "/images/dashboards/dashboard-2.jpg",
+      alt: "Monthly Attendance Trends",
+      title: "Monthly Trends"
+    },
+    {
+      src: "/images/dashboards/dashboard-3.jpg",
+      alt: "Department Comparison",
+      title: "Department Comparison"
+    },
+    {
+      src: "/images/dashboards/dashboard-4.jpg",
+      alt: "Regional Performance",
+      title: "Reginal Performance"
+    }
+  ];
+
   return (
     <section id="projects" className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -83,6 +107,12 @@ export function Projects() {
               value="cybersecurity"
             >
               Cybersecurity Projects
+            </TabsTrigger>
+            <TabsTrigger 
+              className="px-6 py-2 rounded-md transition-all data-[state=active]:bg-white data-[state=active]:shadow-sm" 
+              value="dashboards"
+            >
+              Dashboards
             </TabsTrigger>
             <TabsTrigger 
               className="px-6 py-2 rounded-md transition-all data-[state=active]:bg-white data-[state=active]:shadow-sm" 
@@ -126,6 +156,13 @@ export function Projects() {
               </div>
             </TabsContent>
           ))}
+
+          <TabsContent value="dashboards">
+            <div className="bg-white p-6 rounded-xl shadow-md">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4">Attendance Analysis Dashboard</h3>
+              <Gallery images={dashboardImages} />
+            </div>
+          </TabsContent>
 
           <TabsContent value="codeSnippets">
             <div className="bg-white p-6 rounded-xl shadow-md">
