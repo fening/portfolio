@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Sidebar } from './components/Sidebar'
+import { GoogleAnalytics } from './components/GoogleAnalytics'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
+      <GoogleAnalytics />
       <body className={inter.className}>
         <div className="min-h-screen flex">
           <div className="hidden lg:block fixed h-screen">
