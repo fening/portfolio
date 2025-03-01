@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Sidebar } from './components/Sidebar'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
+import { CookieConsent } from './components/CookieConsent'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <GoogleAnalytics />
+      <CookieConsent />
       <body className={inter.className}>
         <div className="min-h-screen flex">
           <div className="hidden lg:block fixed h-screen">
